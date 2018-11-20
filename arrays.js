@@ -30,3 +30,8 @@ function accessElementInArray(array,i){
   return array[i]
   
 }
+
+function destructivelyRemoveElementToEndOfArray(array){
+  array.shift()
+  
+}
