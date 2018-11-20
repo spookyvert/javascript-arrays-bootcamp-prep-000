@@ -5,17 +5,35 @@ var chocolateBars = [
   'skittles'
   ]
   
-var array1 = ['foo']
 
-function addElementToBeginningOfArray( array1, element ) {
-  [element,...array1]
- 
- return array1
+function addElementToBeginningOfArray(array, element){
+  return [element, ...array]
 }
 
-function destructivelyAddElementToBeginningOfArray( array, element ) {
-  [element,...array]
- 
- return array
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
 }
 
+
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
+}
+
+function accessElementInArray(array, index) {
+  return array[index]
+}
+
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1)
+}
+
+function removeElementFromEndOfArray(array) {
+  array.pop()
+  return array
+}
