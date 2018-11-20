@@ -11,9 +11,3 @@ function addElementToBeginningOfArray( array, element ) {
  return array
 }
 
-function destructivelyAddElementToBeginningOfArray( array, element ) {
-  array.push(element);
-   [element,...array]
- 
- return array
-}
